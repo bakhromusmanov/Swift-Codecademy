@@ -1,4 +1,3 @@
-// Write your code below
 enum ProductType: String, CaseIterable{
    case aceRepository = "Ace Repository"
    case dealForcer = "Deal Forcer"
