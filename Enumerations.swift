@@ -1,3 +1,16 @@
+/*
+Numero Uno Software Store by Bakhrom Usmanov
+In this project, we will be creating three enumerations.
+
+The first enumeration will represent the products a user can purchase and will store raw values that represent the display name of the software.
+
+The second enumeration will represent the edition of the software and will contain a mutating method.
+
+The final enumeration will represent the delivery methods available to the customer and will have associated values and a computed property.
+
+We’ll also be creating a few functions to complete the functionality of the store. One will iterate through the enumeration containing the various products a user can purchase. The other will send an order confirmation to the user based on the details of their order.
+*/
+
 enum ProductType: String, CaseIterable{
    case aceRepository = "Ace Repository"
    case dealForcer = "Deal Forcer"
