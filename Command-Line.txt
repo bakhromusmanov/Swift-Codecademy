@@ -1,0 +1,64 @@
+/*
+Bicycle World
+Welcome to Bicycle World, the premier text-based bicycle shop! This shop is only accessible to programmers like you, who are familiar with the command line.
+In this project, you’ll use the commands you learned to navigate and edit the filesystem of this special shop.
+The starting filesystem is shown below. (Bicycle World recently changed owners, who named the main directory bicycle-world-ii.)
+bicycle-world-ii
+|—— brands.txt
+|—— freight/
+|   |—— messenger/
+|   |—— porteur/
+|—— mountain/
+|   |—— downhill/
+|   |   |—— heavyweight/
+|   |   |—— lightweight/
+|   |—— hardtail/
+|—— racing/
+    |—— road/
+    |—— track/
+*/
+
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ ls
+brands.txt  freight  mountain  racing
+$ cd freight/
+$ ls
+messenger  porteur
+$ cd porteur/
+$ cd ../..
+$ ls
+brands.txt  freight  mountain  racing
+$ cd mountain/downhill/
+$ touch dirt.txt
+$ touch mud.txt
+$ ls
+dirt.txt  heavyweight  lightweight  mud.txt
+$ mkdir safety
+$ cd ..
+$ ls
+downhill  hardtail
+$ cd ..
+$ ls
+brands.txt  freight  mountain  racing
+$ mkdir bmx
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ touch bmx/tricks.txt
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ cd bmx
+$ ls
+tricks.txt
+$ cd ..
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ cd mountain/downhill/
+$ ls
+dirt.txt  heavyweight  lightweight  mud.txt  safety
+$ cd ../..
+$ ls
+bmx  brands.txt  freight  mountain  racing
+$ pwd
+/home/ccuser/workspace/bicycle-world-ii
+$ 
