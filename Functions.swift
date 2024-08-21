@@ -31,30 +31,19 @@ func getComputerChoice() -> String{
   }
 }
 
-func determineWinner(_ userChoice: String, _ compChoice: String) -> String{
-  switch userChoice{
+func determineWinner(_ userChoice: String, _ compChoice: String) -> String {
+    switch userChoice {
     case let x where x == compChoice:
-      return "It's a tie"
-    case "rock": 
-      if compChoice == "paper"{
-        return "The computer won"
-      } else{ 
-        return "The user won"
-      }
+        return "It's a tie"
+    case "rock":
+        return compChoice == "paper" ? "The computer won" : "The user won"
     case "paper":
-      if compChoice == "scissors"{
-        return "The computer won"
-      } else {
-        return "The user won"
-      } 
+        return compChoice == "scissors" ? "The computer won" : "The user won"
     case "scissors":
-      if compChoice == "rock"{
-        return "The computer won"
-      } else {
-        return "The user won"
-      }
-    default: return "Invalid \(userChoice) OR \(compChoice)"
-  }
+        return compChoice == "rock" ? "The computer won" : "The user won"
+    default:
+        return "Invalid \(userChoice) OR \(compChoice)"
+    }
 }
 
 let userChoice = getUserChoice(userInput: "rock")
